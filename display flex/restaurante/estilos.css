@@ -1,0 +1,147 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f5f0;
+  color: #333;
+}
+
+header {
+  background-color: #ff7043;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.seccion {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.seccion h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.platillos-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 20px;
+}
+
+.platillo {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  width: 220px;
+  text-align: center;
+}
+
+.platillo img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.platillo .descripcion {
+  padding: 15px;
+}
+
+.platillo .descripcion h3 {
+  margin: 0 0 10px 0;
+}
+
+.platillo .descripcion p {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+form input, form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  flex: 1 1 150px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: #ff5722;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ff7043;
+  color: white;
+  margin-top: 30px;
+}
+
+.platillo {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* animación suave */
+}
+
+.platillo:hover {
+  transform: translateY(-5px); /* se levanta un poco */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3); /* sombra más grande */
+}
+
+@media (max-width: 600px) {
+  .platillo {
+    width: 100%;
+  }
+}

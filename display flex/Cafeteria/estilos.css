@@ -1,0 +1,116 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+header {
+  background-color: #a0522d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+}
+
+header nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: rgb(185, 169, 169);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.seccion {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.seccion h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tarjetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.tarjeta .descripcion {
+  padding: 15px;
+}
+
+.tarjeta .descripcion h3 {
+  margin: 0 0 10px 0;
+}
+
+.tarjeta .descripcion p {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.calificaciones-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.calificacion {
+  background-color: #fff4e6;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #a0522d;
+  color: white;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .tarjeta {
+    width: 100%;
+  }
+}
